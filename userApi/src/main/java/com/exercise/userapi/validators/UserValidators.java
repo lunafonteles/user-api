@@ -23,6 +23,10 @@ public class UserValidators {
             validationErrors.add("Cpf obrigatório");
         }
 
+        if(!StringUtils.hasLength(String.valueOf(11))) {
+            validationErrors.add(("cpf deve conter 11 digitos"));
+        }
+
         if (!StringUtils.hasText(user.getEmail())) {
             validationErrors.add("Email obrigatório");
         }

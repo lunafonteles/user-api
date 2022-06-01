@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
-    User findFirstByCpf(String cpf);
+    User findByCpf(String cpf);
 }
