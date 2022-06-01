@@ -4,7 +4,6 @@ import com.exercise.userapi.dto.UserRequest;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;

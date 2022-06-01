@@ -40,9 +40,4 @@ public class UserController {
         return userService.update(user, id);
     }
 
-
-    //todo: verificar relacionamento com api de vendas, o que eh pra trazer?
-    /*
-    @GetMapping
-    public List<OrderId>*/
 }

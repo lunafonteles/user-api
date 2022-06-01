@@ -1,12 +1,10 @@
 package com.exercise.userapi.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
-import java.util.UUID;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,7 +12,7 @@ import java.util.UUID;
 public class FinishedOrderId {
 
     @Id
-    private String id = UUID.randomUUID().toString();
+    private String id;
 
     @ManyToOne
     @JoinColumn(name = "users_id", referencedColumnName = "id")

@@ -5,7 +5,6 @@ import com.exercise.userapi.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 

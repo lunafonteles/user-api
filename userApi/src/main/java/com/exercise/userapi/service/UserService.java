@@ -38,7 +38,6 @@ public class UserService {
         }
 
         UserResponse userResponse = new UserResponse(userRepository.save(user1));
-
         return userResponse;
     }
 

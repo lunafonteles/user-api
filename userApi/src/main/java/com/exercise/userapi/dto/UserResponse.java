@@ -21,5 +21,4 @@ public class UserResponse {
         phoneNumber = user.getPhoneNumber();
         email = user.getEmail();
     }
-
 }
