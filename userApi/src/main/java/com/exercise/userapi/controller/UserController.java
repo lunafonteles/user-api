@@ -4,6 +4,7 @@ import com.exercise.userapi.dto.UserRequest;
 import com.exercise.userapi.dto.UserResponse;
 import com.exercise.userapi.model.User;
 import com.exercise.userapi.service.UserService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -21,6 +22,7 @@ public class UserController {
     }
 
     @GetMapping
+    @CircuitBreaker(name = "travels-circuitbreak")
     public List<User> getAll(){
         return userService.getAll();
     }
